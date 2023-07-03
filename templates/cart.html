@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cosmetic Seller - Cart</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+    {% if cart_empty %}
+    <p>Your cart is empty.</p>
+    {% else %}
+    <div class="cart">
+        <h3>Compra Total: ${{ total_price }}</h3>
+        <a href="{{ url_for('checkout.checkout') }}">Proceder al Pago</a>
+        <br>
+        <br>
+        <br>
+        <h2 class="alignleft">Tus Compras</h2>
+        <br>
+        <br>
+        {% for product in cart %}
+        <div class="cart-item">
+            <img src="{{ product[3] }}" alt="{{ product[1] }}">
+            <h3>{{ product[1] }}</h3>
+            <p>Price: ${{ product[2] }}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+    {% endif %}
+</body>
+</html>

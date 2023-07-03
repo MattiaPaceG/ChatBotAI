@@ -1,0 +1,103 @@
+{
+  "intents": [
+    {
+      "tag": "saludos",
+      "patterns": [
+        "Hola",
+        "Hey",
+        "Como estas",
+        "Hay alguien?",
+        "Buenos diàs",
+        "Buenas tardes",
+        "Buenas",
+        "Hola Kelly"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hola, gracias por visitarnos",
+        "Hola, en que puedo ayudarte?"
+      ]
+    },
+    {
+      "tag": "despedidas",
+      "patterns": ["Hasta Luego", "Hasta Pronto", "Adiòs"],
+      "responses": [
+        "Hasta pronto! Gracias por tu visita",
+        "Tenga un excelente dia",
+        "Adiós! Regresa pronto!"
+      ]
+    },
+    {
+      "tag": "gracias",
+      "patterns": ["Gracias", "Muchas gracias", "Es Perfecto!", "Eso es mucho!"],
+      "responses": ["Estoy feliz de ayudarte", "Ningun problema :D !", "Es un gusto ayudarte!"]
+    },
+    {
+      "tag": "objetos",
+      "patterns": [
+        "Que objetos venden?",
+        "Que venden?",
+        "Que puedo encontrar en la pagina web?",
+        "Que puedo comprar aqui?"
+      ],
+      "responses": [
+        "Esta es una tienda de cosmeticos.",
+        "Vendemos de todo para tu bienestar y belleza! Cosmeticos y mucho mas!"
+      ]
+    },
+    {
+      "tag": "pagos",
+      "patterns": [
+        "Puedo pagar con carta?",
+        "Aceptan Mastercard o Visa?",
+        "Puedo pagar con Paypal?",
+        "Aceptan efectivo?",
+        "Aceptan American Express?"
+      ],
+      "responses": [
+        "Aceptamos pagos con VISA, Mastercard y Paypal",
+        "Aceptamos todas las tarjetas de creditos principales y Paypal"
+      ]
+    },
+    {
+      "tag": "entrega",
+      "patterns": [
+        "Cuanto demora una entrega generalmente?",
+        "En cuanto tiempo llega mi orden a la casa?",
+        "Cuando tendrè mi orden de hoy?",
+        "Cuando me llegarà una orden?",
+        "Cual es el tiempo de entrega estimado?"
+      ],
+      "responses": [
+        "La entrega demora de 2 a 4 dias habiles",
+        "Puedes esperar tu orden en un lapso de 2 a 4 diàs"
+      ]
+    },
+    {
+      "tag": "divertido",
+      "patterns": [
+        "Dime un chiste!",
+        "Dime algo divertidos!",
+        "Conoces algun chiste o broma?"
+      ],
+      "responses": [
+        "¿Cual es la fruta mas paciente? Es pera.",
+        "¿Cual es la fruta mas divertida? La naranja ja ja ja ja.",
+        "¿Que le dice un techo a otro? Techo de menos. "
+      ]
+    },
+        {
+      "tag": "acciones",
+      "patterns": [
+        "Como puedo pagar?",
+        "Donde veo mi carrito?",
+        "Cual es la pagina para pagar?",
+        "proceso de pago"
+      ],
+      "responses": [
+        "Puedes seguir con tu pago aqui: <a class='call-to-action' href = 'http://127.0.0.1:5000/cart'> <br><br> CARRITO </a>"
+
+      ]
+    }
+  ]
+}

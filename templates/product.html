@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Detalles del producto</h1>
+    <br>
+    <div class="product-details">
+        <img src="{{ product[3] }}" alt="{{ product[1] }}">
+        <h2>{{ product[1] }}</h2>
+        <br>
+        <p>Precio: ${{ product[2] }}</p>
+        <br>
+        <p>Descripcion: {{ product[4] }}</p>
+        <br>
+        <a class="add_to_cart_button" href="{{ url_for('index.add_to_cart', product_id=product[0]) }}">Agregar al Carrito</a>
+        <br>
+        <br>
+        <br>
+        <a href="{{ url_for('index.home') }}">Pagina Principal</a>
+    </div>
+</body>
+</html>
